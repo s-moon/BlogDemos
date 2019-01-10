@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "post-install-cmd": [
+            "php security-checker.phar security:check --format=simple"
+        ],
+        "post-update-cmd": [
+            "php security-checker.phar security:check --format=simple"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "5.2.20"
+    }
+}
